@@ -1,0 +1,19 @@
+{
+  "name": "customer-service",
+  "version": "1.0.0",
+  "description": "microservices demo - customer service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "docker"
+  ],
+  "author": "Boby Thomas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "uuid": "^3.3.2"
+  }
+}
