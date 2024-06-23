@@ -1,5 +1,5 @@
 image:
-  repository: msdemo/orderapi
+  repository: msdemo/customerapi
   tag: latest
 
 service: 
@@ -8,17 +8,14 @@ service:
 
 livenessProbe:
   httpGet:
-    path: /api/v1/orderapi/health
+    path: /api/v1/customerapi/health
     port: 8080
     initialDelaySeconds: 3
     periodSeconds: 3
 
 readinessProbe:
   httpGet:
-    path: /api/v1/orderapi/health
+    path: /api/v1/customerapi/health
     port: 8080
     initialDelaySeconds: 3
     periodSeconds: 3    
-
-ingress:
-  enabled: true
